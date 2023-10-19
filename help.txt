@@ -1,0 +1,6 @@
+1-primero busque el ejecutable y ingrese el nombre
+tarea\scr> .\minigrep.exe
+
+2- El argumeto siguiente es la palabra a buscar ej: hola
+3- El siguiente es el color del texto que desea...estan el 1= rojo, 2= rojo y 3 = amarillo
+4- Y por ultimo se ingresa un numero para abrir el archivo 1 para fuera de la carpeta y 2 para dentro de la carpeta

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main (int argc, char* argv[])
+int main (int argc, char* argv[]){
     ifstream archivo;
     ofstream outfile;
     string value;
@@ -17,10 +17,10 @@ int main (int argc, char* argv[])
     
     resp = stoi(argv[3]);
 
-    if (resp = 1 ){
-        archivo.open("../mi_carpeta/oracion.txt", ios::in);
-    }else if(resp = 2){
-        archivo.open("si.txt", ios::in);
+    if (resp == 1 ){
+        archivo.open("../mi_carpeta/archivo_fuera.txt", ios::in);
+    }else if(resp == 2){
+        archivo.open("archivo_dentro.txt", ios::in);
     }else {
         cout << "Ingreso un numero incorrecto" << endl;
         return 0;
@@ -77,13 +77,10 @@ int main (int argc, char* argv[])
 			   cout << " ";
 		    }
             break;
-
-            case 4: //blanco
-
+            default : //blanco
             if (palabra == value){
         	  SetConsoleTextAttribute(h,7);
         	 cout <<value << " ";
-        		SetConsoleTextAttribute(h,7);
                 cont = cont + 1;
 		    }else{
 			   cout << value;
@@ -92,5 +89,5 @@ int main (int argc, char* argv[])
         }
     }
     cout << " " << endl;
-    cout << "Se repitio la frase: " << cont << " Veces " << endl;
+    cout << "Se encontraron " << cont << " coincidencias " << endl;
 }
