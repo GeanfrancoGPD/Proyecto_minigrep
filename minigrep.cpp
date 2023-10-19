@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main (){
+int main (int argc, char* argv[]){
     ifstream archivo;
     ofstream outfile;
     string value;
@@ -23,14 +23,8 @@ int main (){
         cout << "Se encontro" << endl;
     }
 
-    cout << "Ing.la palabra:"<< endl;;
-    cin >>palabra;
-    cout << "De que color quieres que se marque la palabra?" << endl;
-    cout << "1-rojo" << endl;
-    cout << "2-Azul" << endl;
-    cout << "3-amarillo" << endl;
-    cout << "4-blanco" << endl;
-    cin >> x;
+    palabra = argv[1]; //para leer la palabra
+    x = stoi(argv[2]); //para leer el numero del color 
 
     while(archivo.good()){
     	
